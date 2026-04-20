@@ -69,6 +69,14 @@ select subject_name, replace(department, 'Sciences','Sci') from subjects;
 select 26.9876 as our_number, round(26.9876,2) as rounded_to_two,
 ceil(26.9876) as ceiling, floor(26.9876) as floored;
 
+--aggregate functions
+select student_id, count(*) as number_of_exams
+from exam_results
+group by student_id
+having count(*) > 1;
+
+
+
 
 
 
