@@ -130,4 +130,6 @@ select result_id, student_id, exam_date,
 select to_char(exam_date,'Day, dd month yyyy') from exam_results;
 
 
-
+select name from employees
+union
+select department_name from departments;
